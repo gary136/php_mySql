@@ -1,0 +1,95 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test_chart</title>
+    <link rel="stylesheet" href="chartStyling.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<div id="container">
+<div id="title">
+    <h3>台中市 南屯區</h3>
+</div>
+<div id="nav">
+
+</div>
+<div id="core">
+<div id="sidebar">
+    <div class="attr">
+        <span id="icon_gps"></span>
+        <p>房價分布-地區</p>
+    </div>
+    <div class="attr">
+        <span id="icon_time"></span>
+        <p>房價分布-時間</p>
+    </div>
+    <div class="attr">
+        <span id="icon_type"></span>
+        <p>房價分布-類型</p>
+    </div>
+    <div class="attr">
+        <span id="icon_rela"></span>
+        <p>房價分布-因子</p>
+    </div>            
+</div>
+<section>
+    <div id="chart_gps">
+        iii
+    </div>
+    <div id="chart_time">
+        jjj
+    </div>
+    <div id="chart_type">
+        kkk
+    </div>
+    <div id="chart_rela">
+        lll
+    </div>
+</section>
+</div>
+</div>
+<script>
+$(function() {
+    $("#icon_gps").click(function() {
+        $("#chart_gps").css('display','block');
+        $("#chart_time").css('display','none');
+        $("#chart_type").css('display','none');
+        $("#chart_rela").css('display','none');
+        console.log('t');
+    });
+    $("#icon_time").click(function() {
+        $("#chart_gps").css('display','none');
+        $("#chart_time").css('display','block');
+        $("#chart_type").css('display','none');
+        $("#chart_rela").css('display','none');
+    });
+    $("#icon_type").click(function() {
+        $("#chart_gps").css('display','none');
+        $("#chart_time").css('display','none');
+        $("#chart_type").css('display','block');
+        $("#chart_rela").css('display','none');
+    });
+    $("#icon_rela").click(function() {
+        $("#chart_gps").css('display','none');
+        $("#chart_time").css('display','none');
+        $("#chart_type").css('display','none');
+        $("#chart_rela").css('display','block');
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<script>
+
+    var count = 0;
+
+    function cc(card) {
+        // Only change code below this line
+        var number = "";
+        switch(card) {
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                number = 1;
+                break;
+            case 7:
+            case 8:
+            case 9:
+                number = 0;
+                break;
+            case 10:
+            case 'J':
+            case 'Q':
+            case 'K':
+            case 'A':
+                number = -1;
+                break;
+        }
+        count += number;
+        console.log(number);
+        if(count > 0) {
+            console.log(count + " Bet");
+        } else {
+            console.log(count + " Hold");
+        }
+        // Only change code above this line
+    }
+    // Add/remove calls to test your function.
+    // Note: Only the last will display
+    cc(2);
+    cc(3); cc(7); cc('K'); cc('A');
+
+</script>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      navbars
+    </title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+  <nav role="presentation" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+      <a class="navbar-brand">88男的數據觀測站</a>
+      <button type="button" class="navbar-toggle"
+      data-target="#navbarCollapse" data-toggle="collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">房價觀測</a></li>
+          <li><a href="#">生活機能</a></li>
+          <li><a href="#">美食調查<span class="caret"></span></a></li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="input-group">
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-info">Go</button>
+            </span>
+            <label for="serach" class="sr-only">Search</label>
+            <input type="text" id="search" class="form-control" placeholder="Search">
+            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+          </div>
+        </form>
+        <form class="navbar-form navbar-right">
+          <input class="btn btn-success" type="button" value="Login">
+        </form>
+    </div>
+  </nav>
+  <div class="container-fluid" style="margin-top:60px">
+    <iframe src="http://localhost:5601/goto/33caffbfa1d94ad75a7ea867ac64adc8?embed=true" height="825" width="1400"></iframe>
+
+    
+  </div>  
+    
+    
+  </body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    font-family: Microsoft JhengHei;
+}
+
+.navbar {
+    margin:5px 0 0 0;
+    border: 0px;
+}
+
+#title {
+    padding:0 0 15px 15px;
+    text-decoration: none;
+}
+#tabs {
+    padding:10px 59px 10px 0;
+    font-size: 17px;
+}
+.large_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://img.clnote.tw/20180117235554_28.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 523px;
+}
+.img-circle {
+    border-radius: 80%;
+}
+form-group input-group mb-3 {
+    background-color: #fff
+}
+button {
+    background-color: white;
+}
+.head_wrap {
+    padding: 15px 0px  0px 0px;
+}
+.title {
+    text-align: center
+}
+#search {
+    font-size: 18px;
+    background-color: white;
+    text-align: center
+}
+#search_bar{
+    background: aliceblue;
+}
+#search_bar p{
+    font-size:24px;
+    text-align: center
+}
+/*
+#taipei_district{
+    display: inline-block;
+}
+#taipei_village{
+    display: inline-block;
+}
+select{
+    width: 125px;
+    font-size: 18px;
+}
+
+#empty {
+    width:250px;    
+    font-size: 18px;
+}
+#sub{
+    width:75px;    
+    font-size: 18px;
+}
+*/
+

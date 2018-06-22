@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Link Test</title>
+</head>
+<body>
+    <a id="mylink" href="http://mysite.com">Click me</a><br>
+    <script>
+        url = document.links.mylink.href;
+        document.write('The URL is ' + url + '<br>');
+    </script>
+    <script>
+        i_e_url = document.getElementById('mylink').href;
+        j_url = $('mylink').href;
+        document.write('The i_e_URL is ' + i_e_url);
+        document.write('The j_URL is ' + j_url)
+    </script>
+    <script>
+        s_url = document.links[0].href
+        document.write('The s_URL is ' + s_url + '<br>')
+        document.write(document.links.length + '<br>')
+        for (j=0 ; j < document.links.length ; j = j + 1)
+            document.write(document.links[j].href + '<br>')
+    </script>
+
+
+
+
+
+</body>
+</html>

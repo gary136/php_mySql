@@ -1,0 +1,27 @@
+<script>
+    // 梅花: 0 黑桃: 3
+    var cards = [];
+    for(var i = 0; i < 4; i++){
+        for(var j = 0; j < 13; j++){
+            var single_card = {color:i, number:j};
+            cards.push(single_card);
+        }
+    }
+    var randIndex = parseInt(Math.random() * 52);
+    console.log(cards[randIndex]);
+    function translateCard(card){
+        var colorRepr = ["\u2663", "\u2666", "\u2665", "\u2660"];
+        var numberRepr = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+        var c = card["color"];
+        var n = card["number"];
+        return colorRepr[c] + numberRepr[n];
+    }
+    for(var i = 0; i < cards.length; i++){
+        var single_card = cards[i];
+        console.log(translateCard(single_card));
+    }
+
+
+    console.log("我抽出來的卡是:", translateCard(cards[randIndex]))
+
+</script>

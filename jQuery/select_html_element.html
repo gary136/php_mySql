@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="utf-8">
+    <title>
+        changehtmlcontent
+    </title>
+    <style>
+        .bluebox{
+            background-color: #3A5795;
+            color: white;
+            height: 100px;
+            width:auto;
+        }
+        .yellowbox{
+            background-color: rgb(222, 224, 85);
+            height: 100px;
+            width: auto;
+        }
+        .greenbox{
+            background-color: #31af37;
+            height: auto;
+            width: auto;
+        }
+        .great{
+            background-color: #5a3479;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="bluebox" id="facebook">
+    <p>Facebook is <span class="great">great</span>.</p>
+    <p id="ttt">Paragraph2</p>
+    <p>Paragraph3</p>
+</div>
+<div class="yellowbox" id="apple">
+    <p>
+        Apple.
+    </p>
+   
+    <p><a href="http://www.google.com">This is a link</a></p>
+    <p><a href="http://www.microsoft.com">This is another link</a></p>
+</div>
+
+    <p>a paragraph</p>
+
+<div class="greenbox">
+    <p>
+        Microsoft.
+    </p>
+     <ul>
+        <li>BMW</li>
+        <li>Audi</li>
+        <li>Mercedes</li>
+    </ul>
+    <table>
+    <tr><th>Phone Make</th><th>Model</th><th>Model</th></tr>
+    <tr><th>Apple</th><th>Iphone 4</th><th>16G</th></tr>
+    <tr><th>Apple</th><th>Iphone 4</th><th>16G</th></tr>
+    <tr><th>Apple</th><th>Iphone 4</th><th>16G</th></tr>
+    <tr><th>Apple</th><th>Iphone 4</th><th>16G</th></tr>
+    <tr><th>Apple</th><th>Iphone 4</th><th>16G</th></tr>
+    </table>
+    
+    <p>Type your name:<input>
+    <button type="submit">Submit</button></p>
+</div>
+
+</body>
+<script>
+$(function(){
+   $("*").css("font-size", '16px');
+    
+    //$("p").css("text-align","center");
+    //$("div > p").css("text-align","center");
+    $("div p").css("text-align","center");
+    $(".great").css("background-color","#eb7f3c");
+    $("#ttt").css("background-color","#6acb57");
+    $("div.bluebox").css("font-family","calibri");
+    
+    $("p:first-child,p:last-child").css("text-decoration", "underline");
+    
+    $("[href]").css("color","red");
+    
+    $("li:first-child, li:last-child").css("background-color","#bbf362");
+    
+    $("tr:even").css("background-color","#e1d446");
+    $("tr:odd").css("background-color","#811c90");
+    
+    $(":input").css("background-color","red");
+    $(":Submit").css("background-color","#7979eb");
+    
+    $("div:has(table)").css("background-color","rgba(107,180,198,0.697)");
+});
+</script>
+</html>

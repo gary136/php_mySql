@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="utf-8">
+    <title>
+        changehtmlcontent
+    </title>
+    <style>
+        .bluebox{
+            background-color: #3A5795;
+            color: white;
+            height: 100px;
+            width:auto;
+        }
+        .yellowbox{
+            background-color: rgb(222, 224, 85);
+            height: 100px;
+            width: auto;
+        }
+        .greenbox{
+            background-color: #31af37;
+            height: auto;
+            width: auto;
+        }
+        .great{
+            background-color: #5a3479;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="bluebox" id="facebook">
+    <p>Facebook is <span class="great">great</span>.</p>
+    <p id="ttt">Paragraph2</p>
+    <p>Paragraph3</p>
+</div>
+<div class="yellowbox" id="apple">
+    <p>
+        Apple.
+    </p>
+   
+    <p><a href="http://www.google.com">This is a link</a></p>
+    <p><a href="http://www.microsoft.com">This is another link</a></p>
+</div>
+
+    <p>a paragraph</p>
+
+<div class="greenbox">
+    <p>
+        Microsoft.
+    </p>
+     <ul>
+        <li>BMW</li>
+        <li>Audi</li>
+        <li>Mercedes</li>
+    </ul>
+    <table>
+    <tr><th>Phone Make</th><th>Model</th><th>Model</th></tr>
+    <tr><th>Apple</th><th>Iphone 4</th><th>16G</th></tr>
+    <tr><th>Apple</th><th>Iphone 4</th><th>16G</th></tr>
+    <tr><th>Apple</th><th>Iphone 4</th><th>16G</th></tr>
+    <tr><th>Apple</th><th>Iphone 4</th><th>16G</th></tr>
+    <tr><th>Apple</th><th>Iphone 4</th><th>16G</th></tr>
+    </table>
+    
+</div>
+
+<p>Type your name:
+    <form method="get">
+    <input type="text" name="nanana" id="input">
+    <input type="submit" name="submit" id="Submit">
+    </form>
+    <button type="submit" id="submit">Submit</button></p>
+</body>
+<script>
+$(function(){
+//    $("p").click(function() {
+//         $("p").css("background-color", "rgba(206,152,230,0.697)");
+//         $(this).css("background-color", "rgba(206,152,230,0.697)");
+//    });
+$("p").mouseover(function() {
+    $(this).css("background-color", "rgba(206,152,230,0.697)");
+});
+$("p").mouseout(function() {
+    $(this).css("background-color", "#ceb6d8");
+});
+$("input").focus(function() {
+    $(this).css("background-color", "rgba(27,132,201,0.697)");
+});
+$("input").blur(function() {
+    $(this).css("background-color", "#ffffff");
+});
+$("input").keyup(function() {
+    $(this).css("background-color", "rgba(39,195,162,0.697)");
+});
+$("#submit").click(function(){
+    $("#input").css("background-color", "yellow");
+    $("#input").val("");
+});
+
+
+});
+</script>
+</html>

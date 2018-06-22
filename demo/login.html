@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>login</title>
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styling.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+<div>
+    <div class="container">
+        
+        <nav class="navbar navbar-light">
+            <div class="navbar-header">
+                <img class="img-circle" src="house-icon.png">
+            </div>
+            <div id="title" class="navbar-brand" >
+                <a href="#"><h3>房市風向球</h3></a>
+            </div>            
+            <div id="tabs">
+                <ul class="nav navbar-right nav-tabs nav-fill justify-content-end">
+                    <li class="nav-item"><a class="nav-link active" href="#">緣起</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">演算法原理</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">團隊介紹</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">登入</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    <div class="container-fluid">
+        <div class="col-sm-6 col-sm-offset-3">
+            <form action="login.php" method="POST">
+                <div class="form-group">
+                <label for="email">帳號:</label>
+                <input value="預設文字" type="email" class="form-control" name="m" id="email">
+                </div>
+                <div class="form-group">
+                <label for="password" >密碼:</label>
+                <input value="預設文字" type="password" class="form-control" name="p" id="password">
+                </div>
+                <button type="submit" class="btn btn-primary">登入</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        </body>
+</html>

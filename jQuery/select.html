@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset ="utf-8">
+    <title>
+        Select Menu
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        .bluebox{
+            background-color: #3A5795;
+            color: white;
+            height: 100px;
+            width:auto;
+        }
+        .yellowbox{
+            background-color: rgb(222, 224, 85);
+            height: 100px;
+            width: auto;
+        }
+        .greenbox{
+            background-color: #31af37;
+            height: 100px;
+            width: auto;
+        }
+        .great{
+            background-color: #5a3479;
+        }
+        #strength1{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="bluebox ui-corner-all" id="facebook">
+<label for="strength">Select your biggest strength:</label>
+<br />
+<form>
+    <select id="strength1" name="strength1">
+        <option>Motivation</option>
+        <option selected="selected">Creativity</option>
+        <option>Curiosity</option>
+        <option>Integrity</option>
+        <option>Modesty</option>
+    </select>
+</form>
+</div>
+<div class="yellowbox ui-corner-all" id="apple">
+<form>
+    <select id="strength2" name="strength2">
+        <optgroup label="Group 1">
+            <option>Motivation</option>
+            <option selected="selected">Creativity</option>
+            <option>Curiosity</option>
+        </optgroup>
+        <optgroup label="Group 2">
+            <option>Integrity</option>
+            <option>Modesty</option>
+        </optgroup>
+        
+    </select>
+</form>
+</div>
+<div class="greenbox ui-corner-all" id="microsoft">
+    <p>
+        Microsoft.
+    </p>
+</div>
+
+</body>
+<script>
+$(function () {
+$("#strength1").selectmenu();
+$("#strength2").selectmenu();
+});
+</script>
+</html>

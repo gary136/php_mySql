@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+</head>
+<body>
+<script>
+    full_numarray = [];
+    for(i=0; i<9; i++) {
+        numarray = [];
+        for(j=0; j<9; j++) {
+            number = (i+1) * (j+1);
+            numarray.push(number);
+        }
+        full_numarray.push(numarray)
+        console.log(numarray)
+    }
+    console.log(full_numarray)
+</script>
+</body>
+</html>

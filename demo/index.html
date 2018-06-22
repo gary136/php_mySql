@@ -1,0 +1,132 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>entrancepage</title>
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="indexstyling.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="indexjavascript.js"></script>
+</head>
+<div>
+    <div class="container">
+        
+        <nav class="navbar navbar-light">
+            <div class="navbar-header">
+                <img class="img-circle" src="house-icon.png">
+            </div>
+            <div id="title" class="navbar-brand" >
+                <a href="#"><h3>房市風向球</h3></a>
+            </div>
+            
+            
+            <div id="tabs">
+                <ul class="nav navbar-right nav-tabs nav-fill justify-content-end">
+                    <li class="nav-item"><a class="nav-link active" href="#">緣起</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">演算法原理</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">團隊介紹</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="login.html">登入</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row">
+            <h1 class="col-md-12 title">
+                Data visualization for Taiwan house data
+            </h1>
+            <p class="col-md-12">
+
+            </p>
+        </div>
+
+
+
+<div class="large_img">
+    <div id="search_bar">
+        <p>請選擇欲搜尋的區域</p>
+    <form class="form-inline col-md-12">        
+        <div class="form-group">
+        <select class="form-control" name="city" id="city">
+            <option value="Taipei" id="Taipei">台北市</option>
+            <option value="Taichung" id="Taichung">台中市</option>
+            <option value="Kaohsung" id="Kaohsung">高雄市</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <select class="form-control" name="district" class="district" id="district">
+            <option value="d1" id="d1">台北一區</option>
+            <option value="d2" id="d2">台北二區</option>
+            <option value="d3" id="d3">台北三區</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <select class="form-control" name="village" class="village" id="village">
+            <option value="v1" id="v1">台北一里</option>
+            <option value="v2" id="v2">台北二里</option>
+            <option value="v3" id="v3">台北三里</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <select class="form-control" name="type" class="type" id="type">
+            <option value="t1" id="t1">大樓</option>
+            <option value="t2" id="t2">透天</option>
+            <option value="t3" id="t3">華廈</option>
+        </select>
+        </div>
+        <input class="form-control" type="text" placeholder="請輸入關鍵字" id="empty">
+        <button class="btn btn-primary" type="submit" value="搜尋" id="sub">搜尋</button>
+    </form>
+    <button id="test">test</button>
+    </div>
+</div>
+
+
+            <p></p>
+            <p></p>
+            <p></p>
+
+
+
+        <div class="row jumbotron">
+            <div class="col-md-4">
+                <h3 class="display-4">
+                    What we provide......
+                </h3>
+            </div>
+                <div></div>
+                <div class="col-md-2">
+                    <h6>歷史房價呈現</h6>
+                    <a href="#">
+                        <img src="http://seaborn.pydata.org/_static/multiple_regression_thumb.png" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </a>
+
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2">
+
+                    <h6>多因子迴歸分析</h6>
+                    <a href="#">
+                        <img src="http://seaborn.pydata.org/_static/structured_heatmap_thumb.png" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </a>
+                </div>
+                <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <h6>鄰里房價估計</h6>
+                <a href="#">
+                        <img src="http://seaborn.pydata.org/_static/horizontal_boxplot_thumb.png" class="img-fluid img-thumbnail" alt="Responsive image">
+                    </a>
+
+                </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        </body>
+</html>

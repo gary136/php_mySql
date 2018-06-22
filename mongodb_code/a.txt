@@ -1,0 +1,130 @@
+MongoDB shell version v3.4.5
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.5
+use age_username index spend:995ms
+use username_age index spend:0ms
+{
+	"queryPlanner" : {
+		"plannerVersion" : 1,
+		"namespace" : "iii-2017-06.usersNonIndex",
+		"indexFilterSet" : false,
+		"parsedQuery" : {
+			"$and" : [
+				{
+					"age" : {
+						"$lte" : 50
+					}
+				},
+				{
+					"age" : {
+						"$gte" : 21
+					}
+				}
+			]
+		},
+		"winningPlan" : {
+			"stage" : "SORT",
+			"sortPattern" : {
+				"username" : 1
+			},
+			"limitAmount" : 100,
+			"inputStage" : {
+				"stage" : "SORT_KEY_GENERATOR",
+				"inputStage" : {
+					"stage" : "COLLSCAN",
+					"filter" : {
+						"$and" : [
+							{
+								"age" : {
+									"$lte" : 50
+								}
+							},
+							{
+								"age" : {
+									"$gte" : 21
+								}
+							}
+						]
+					},
+					"direction" : "forward"
+				}
+			}
+		},
+		"rejectedPlans" : [ ]
+	},
+	"executionStats" : {
+		"executionSuccess" : true,
+		"nReturned" : 100,
+		"executionTimeMillis" : 988,
+		"totalKeysExamined" : 0,
+		"totalDocsExamined" : 1000000,
+		"executionStages" : {
+			"stage" : "SORT",
+			"nReturned" : 100,
+			"executionTimeMillisEstimate" : 981,
+			"works" : 1000104,
+			"advanced" : 100,
+			"needTime" : 1000003,
+			"needYield" : 0,
+			"saveState" : 7849,
+			"restoreState" : 7849,
+			"isEOF" : 1,
+			"invalidates" : 0,
+			"sortPattern" : {
+				"username" : 1
+			},
+			"memUsage" : 9582,
+			"memLimit" : 33554432,
+			"limitAmount" : 100,
+			"inputStage" : {
+				"stage" : "SORT_KEY_GENERATOR",
+				"nReturned" : 250561,
+				"executionTimeMillisEstimate" : 891,
+				"works" : 1000003,
+				"advanced" : 250561,
+				"needTime" : 749441,
+				"needYield" : 0,
+				"saveState" : 7849,
+				"restoreState" : 7849,
+				"isEOF" : 1,
+				"invalidates" : 0,
+				"inputStage" : {
+					"stage" : "COLLSCAN",
+					"filter" : {
+						"$and" : [
+							{
+								"age" : {
+									"$lte" : 50
+								}
+							},
+							{
+								"age" : {
+									"$gte" : 21
+								}
+							}
+						]
+					},
+					"nReturned" : 250561,
+					"executionTimeMillisEstimate" : 576,
+					"works" : 1000002,
+					"advanced" : 250561,
+					"needTime" : 749440,
+					"needYield" : 0,
+					"saveState" : 7849,
+					"restoreState" : 7849,
+					"isEOF" : 1,
+					"invalidates" : 0,
+					"direction" : "forward",
+					"docsExamined" : 1000000
+				}
+			}
+		}
+	},
+	"serverInfo" : {
+		"host" : "justin-c-huang.local",
+		"port" : 27017,
+		"version" : "3.4.5",
+		"gitVersion" : "520b8f3092c48d934f0cd78ab5f40fe594f96863"
+	},
+	"ok" : 1
+}

@@ -1,0 +1,15 @@
+<script>
+    test = '_eye'
+    test_ = test.split('')
+    d = [];
+    reg =/[0-9a-z]/gi
+    for (i=0;i<test_.length;i++) {
+        if (test_[i].match(reg)) {
+            d.push(test_[i])
+        }
+    }
+    console.log(d)
+    console.log(test_)
+    console.log(test_[3].match(reg))
+
+</script>
